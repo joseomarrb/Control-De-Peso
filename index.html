@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Control De Peso</title>
+</head>
+<body>
+    
+    <main id="main">
+
+        <nav id="nav">
+            <h1 id="title">Control De Peso</h1>
+            <section id="buttons-hidden">
+                <button><i class="fa-solid fa-minus"></i></button>
+            </section>
+        </nav>
+
+        <h3 id="message"></h3>
+
+        <section id="content">
+
+            <label for="weight">Weight</label>
+            <input type="number" name="weight">
+
+            <label for="height">Height</label>
+            <input type="number" name="height">
+
+            <fieldset id="box">
+                <legend>Gender</legend>
+                <input type="checkbox" name="female" id="">
+                <label for="female">Female</label>
+                <input type="checkbox" name="male" id="">
+                <label for="male">Male</label>
+            </fieldset>
+
+            <section id="box-img">
+                <img src="" alt="">
+            </section>
+
+            <section id="buttons">
+                <button id="calculate">Calculate</button>
+                <button id="calculate">Clear</button>
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
