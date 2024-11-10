@@ -1,0 +1,9 @@
+const main = document.querySelector("#main");
+const btnMinimizar = document.querySelector(".buttons-hidden button");
+const mensaje = document.querySelector("#message");
+const inputAltura = document.querySelector("#height");
+const inputPeso = document.querySelector("#weight");
+const inputMasculino = document.querySelector("#male");
+const inputFemenino = document.querySelector("#female");
+const btnCalcular = document.querySelector("#calculate");
+const btnLimpiar = document.querySelector("#clear");
