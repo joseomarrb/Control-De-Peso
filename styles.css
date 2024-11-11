@@ -17,7 +17,12 @@ body{
 }
 
 #main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     max-width: 900px;
+    /* box-sizing: border-box; */
     box-shadow: 2px 4px 5px 4px #0005;
     /* height: 400px; */
     background-color: whitesmoke;
@@ -43,6 +48,40 @@ body{
     border: none;
     cursor: pointer;
     background-color: inherit;
+}
+
+#text{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0 0;
+    gap: 10px;
+}
+
+#message{
+    font-size: 16px;
+    text-align: center;
+}
+
+#box-img{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+}
+
+#box-img img{
+    width: 100%;
+}
+
+#contenido2{
+    box-sizing: border-box;
+    /* background-color: rebeccapurple; */
+    max-width: 300px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
 }
 
 #content{
@@ -75,6 +114,7 @@ body{
 
 #buttons{
     display: flex;
+    margin: 20px 0 5px;
     width: 100%;
     align-items: center;
     justify-content: space-around;

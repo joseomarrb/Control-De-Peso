@@ -14,16 +14,20 @@
         <nav id="nav">
             <h1 id="title">Control De Peso</h1>
             <section id="buttons-hidden">
-                <button><i class="fa-solid fa-minus"></i></button>
+                <button><i class="fa-solid fa-x"></i></button>
             </section>
         </nav>
 
-        <h3 id="message"></h3>
-
+        
         <form id="content">
 
+            <section id="text">
+                <h2>Control De Peso</h2>
+                <h3 id="message">Estás medio pasadita de peso mamita ;)</h3>
+            </section>
+            
             <div class="contenido">
-
+                
                 <div class="container-peso">
                     <label for="weight">Ingrese Su Peso</label>
                     <input type="number" id="weight" name="weight">
@@ -31,28 +35,30 @@
 
                 <div class="container-altura">
                     <label for="height">Ingrese Su Altura</label>
-                    <input type="number" id="height" name="height">
+                    <input type="text" id="height" name="height">
                 </div>
 
             </div>
 
-            <fieldset id="box">
-                <legend>Genero</legend>
-                <div class="boxs">
-                    <input id="female" type="radio" name="female" id="">
-                    <label for="female">Femenino</label>
-                </div>
+            <div class="" id="contenido2">
+                <fieldset id="box">
+                    <legend>Genero</legend>
+                    <div class="boxs">
+                        <input id="female" type="radio" name="female" id="">
+                        <label for="female">Femenino</label>
+                    </div>
 
-                <div class="boxs">
-                    <input id="male" type="radio" name="male" id="">
-                    <label for="male">Masculino</label>
-                </div>
+                    <div class="boxs">
+                        <input id="male" type="radio" name="male" id="">
+                        <label for="male">Masculino</label>
+                    </div>
 
-            </fieldset>
+                </fieldset>
 
-            <section id="box-img">
-                <img src="imgs/" alt="">
-            </section>
+                <section id="box-img">
+                    <img src="imgs/gordo.jpg" alt="">
+                </section>
+            </div>
 
             <section id="buttons">
                 <button id="calculate">Calcular</button>
