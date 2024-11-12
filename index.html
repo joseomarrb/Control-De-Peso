@@ -23,51 +23,57 @@
 
             <section id="text">
                 <h2>Control De Peso</h2>
-                <h3 id="message">Estás medio pasadita de peso mamita ;)</h3>
+                <h3 id="message" class="">Mensaje: <span></span></h3>
             </section>
             
-            <div class="contenido">
+            <section class="contenido">
                 
-                <div class="container-peso">
-                    <label for="weight">Ingrese Su Peso</label>
+                <article class="container-peso">
+                    <label for="weight">Ingrese su Peso</label>
                     <input type="number" id="weight" name="weight">
-                </div>
+                </article>
 
-                <div class="container-altura">
-                    <label for="height">Ingrese Su Altura</label>
+                <article class="container-altura">
+                    <label for="height">Ingrese su Altura</label>
                     <input type="text" id="height" name="height">
-                </div>
+                </article>
 
-            </div>
+            </section>
 
-            <div class="" id="contenido2">
+            <section class="" id="contenido2">
                 <fieldset id="box">
-                    <legend>Genero</legend>
-                    <div class="boxs">
-                        <input id="female" type="radio" name="female" id="">
+                    <legend>Género</legend>
+                    <article class="boxs">
+                        <input id="female" type="checkbox" name="female" id="">
                         <label for="female">Femenino</label>
-                    </div>
+                    </article>
 
-                    <div class="boxs">
-                        <input id="male" type="radio" name="male" id="">
+                    <article class="boxs">
+                        <input id="male" type="checkbox" name="male" id="">
                         <label for="male">Masculino</label>
-                    </div>
+                    </article>
 
                 </fieldset>
 
-                <section id="box-img">
-                    <img src="imgs/gordo.jpg" alt="">
-                </section>
-            </div>
-
-            <section id="buttons">
-                <button id="calculate">Calcular</button>
-                <button id="clear">Limpiar</button>
+                <article id="box-img">
+                    <img src="imgs/confundido.jfif" alt="" class="">
+                    <audio src="audios/" controls autoplay muted></audio>
+                </article>
+                
             </section>
 
+            <section id="buttons">
+                <button class="btn primary" id="calculate">Calcular</button>
+                <button class="btn secondary" id="clear">Limpiar</button>
+            </section>
+            
         </form>
-
+        
     </main>
+
+    <section id="open-container">
+        <button class="btn success" id="open">Abrir</button>
+    </section>
 
     <script src="script.js"></script>
 </body>
