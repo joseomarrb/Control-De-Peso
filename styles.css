@@ -23,9 +23,10 @@ body{
     box-shadow: 2px 4px 5px 4px #0005;
     background-color: whitesmoke;
     border-radius: 6px;
+    z-index: 100;
 }
 
-#nav{
+#header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -47,14 +48,14 @@ body{
 }
 
 
-#content{
+#formulario{
     max-width: 450px;
     background-color: rgb(255, 255, 255);
     padding: 0px 30px 20px;
     border-radius: 6px
 }
 
-#content label{
+#formulario label{
     font-family: cursive;
     font-size: 16px;
     margin: 5px 0;
@@ -173,7 +174,7 @@ fieldset legend{
 .secondary {background-image: linear-gradient(to right, #6c757d, #adb5bd);} 
 .secondary:hover {background-image: linear-gradient(to right, #bdc2c6, #adb5bd);}
 .success {background-image: linear-gradient(to right, #28a745, #56c150);} 
-.success:hover {background-image: linear-gradient(to right, #34b556, #56c150);}
+.success:hover {background-image: linear-gradient(to right, rgb(128, 241, 84), #56c150);}
 
 .visibility{
     visibility: hidden;
@@ -185,4 +186,29 @@ fieldset legend{
 
 #open-container{
     display: none;
+    z-index: 100;
 }
+
+.success:hover{
+    animation-name: surprise;
+        -webkit-animation-name: surprise;
+        -moz-animation-name: surprise;
+    animation-duration: .8s;
+        -webkit-animation-duration: .8s;
+        -moz-animation-duration: .8s;
+}
+
+@keyframes surprise
+{
+    0% {transform: rotate(0deg) scale(1,1);;}
+    10% {transform: rotate(7deg) scale(2,2);}
+    20% {transform: rotate(-7deg) scale(2,2);}
+    30% {transform: rotate(7deg) scale(2,2);}
+    40% {transform: rotate(-7deg) scale(2,2);}
+    50% {transform: rotate(7deg) scale(2,2);}
+    60% {transform: rotate(-7deg) scale(2,2);}
+    70% {transform: rotate(7deg) scale(2,2);}
+    80% {transform: rotate(-7deg) scale(2,2);}
+    90% {transform: rotate(7deg) scale(2,2);}
+    100% {transform: rotate(0deg) scale(1,1);}
+}            

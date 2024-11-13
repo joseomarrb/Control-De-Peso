@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="burbujas/burbujas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Control De Peso</title>
 </head>
@@ -11,31 +12,31 @@
     
     <main id="main">
 
-        <nav id="nav">
+        <header id="header">
             <h1 id="title">Control De Peso</h1>
             <section id="buttons-hidden">
-                <button><i class="fa-solid fa-x"></i></button>
+                <button id="minus"><i class="fa-solid fa-x"></i></button>
             </section>
-        </nav>
+        </header>
 
         
-        <form id="content">
+        <form id="formulario">
 
             <section id="text">
                 <h2>Control De Peso</h2>
-                <h3 id="message" class="">Mensaje: <span></span></h3>
+                <p id="message" class="">Mensaje: <span></span></p>
             </section>
             
             <section class="contenido">
                 
                 <article class="container-peso">
-                    <label for="weight">Ingrese su Peso</label>
-                    <input type="number" id="weight" name="weight">
+                    <label for="weight">Ingrese su Peso (KG)</label>
+                    <input type="number" id="weight" name="weight" required>
                 </article>
 
                 <article class="container-altura">
-                    <label for="height">Ingrese su Altura</label>
-                    <input type="text" id="height" name="height">
+                    <label for="height">Ingrese su Altura (CM)</label>
+                    <input type="number" step="any" id="height" name="height" required>
                 </article>
 
             </section>
@@ -44,20 +45,18 @@
                 <fieldset id="box">
                     <legend>Género</legend>
                     <article class="boxs">
-                        <input id="female" type="checkbox" name="female" id="">
+                        <input id="female" class="female" type="radio" name="radio" >
                         <label for="female">Femenino</label>
                     </article>
 
                     <article class="boxs">
-                        <input id="male" type="checkbox" name="male" id="">
+                        <input id="male" class="male" type="radio" name="radio" >
                         <label for="male">Masculino</label>
                     </article>
-
                 </fieldset>
 
                 <article id="box-img">
-                    <img src="imgs/confundido.jfif" alt="" class="">
-                    <audio src="audios/" controls autoplay muted></audio>
+                    <img src="" id="image">
                 </article>
                 
             </section>
@@ -74,6 +73,20 @@
     <section id="open-container">
         <button class="btn success" id="open">Abrir</button>
     </section>
+
+    <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
