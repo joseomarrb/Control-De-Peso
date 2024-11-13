@@ -6,3 +6,7 @@ se van a mostrar un mensaje y una imagen en comparacion con estos datos. Tambié
 
 
 OJO: Este proyecto es para entretenerse, nada personal ni por que ofenderse, PURA DIVERSIÓN :)))
+
+## Vista del Proyecto
+[![Captura-de-pantalla-26.png](https://i.postimg.cc/vZJFz9Yk/Captura-de-pantalla-26.png)](https://postimg.cc/bZ9BYZ29)
+[![Captura-de-pantalla-27.png](https://i.postimg.cc/htzRTMBV/Captura-de-pantalla-27.png)](https://postimg.cc/0zs4qYrN)
